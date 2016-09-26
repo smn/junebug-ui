@@ -1,0 +1,25 @@
+{
+  "name": "junebug-ui",
+  "version": "1.0.0",
+  "description": "A UI for Junebug",
+  "devDependencies": {
+    "connect": "^3.5.0",
+    "gulp": "^3.9.1",
+    "livereload": "^0.5.0",
+    "serve-static": "^1.11.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smn/junebug-ui.git"
+  },
+  "author": "Simon de Haan",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/smn/junebug-ui/issues"
+  },
+  "homepage": "https://github.com/smn/junebug-ui#readme"
+}
