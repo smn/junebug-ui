@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
-    <script src="build/react.min.js"></script>
-    <script src="build/react-dom.min.js"></script>
-    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,20 +13,13 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script type="text/babel" src="src/init.js"></script>
-    <link href="css/ui.css" rel="stylesheet">
+    <link href="public/css/ui.css" rel="stylesheet">
   </head>
   <body>
 
-    <div class="container">
-      <form class="form-connect">
-        <h2 class="form-connect-heading">Connect to Junebug</h2>
-        <label for="inputUrl" class="sr-only">URL</label>
-        <input type="url" id="inputUrl" class="form-control" placeholder="http://" required autofocus>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Connect</button>
-      </form>
+    <div id="connect" class="container">
     </div> <!-- /container -->
 
-    <div id="example"></div>
+    <script type="text/javascript" src="public/bundle.js" charset="utf-8"></script>
   </body>
 </html>
