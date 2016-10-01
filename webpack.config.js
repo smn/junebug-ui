@@ -1,15 +1,21 @@
-var webpack = require('webpack');
-var path = require('path');
+var path = require("path");
 
-var BUILD_DIR = path.resolve(__dirname, 'src/public');
-var APP_DIR = path.resolve(__dirname, 'src/app');
+var BUILD_DIR = path.resolve(__dirname, 'build');
+var APP_DIR = path.resolve(__dirname, 'app');
 
-var config = {
-  entry: APP_DIR + '/main.js',
-  output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
+module.exports = {
+  entry: {
+    app: ["./app/main.js"]
   },
+  output: {
+    path: path.resolve(__dirname, "build"),
+    publicPath: "/assets/",
+    filename: "bundle.js"
+  },
+  devServer: {
+    inline: true
+  },
+  
   module : {
     loaders : [
       {
@@ -23,5 +29,3 @@ var config = {
     ]
   }
 };
-
-module.exports = config;

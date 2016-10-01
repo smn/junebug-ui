@@ -15,4 +15,3 @@ class ConnectBox extends React.Component {
 }
 
 ReactDOM.render(<ConnectBox />, document.getElementById('connect'));
-console.log('hello');
