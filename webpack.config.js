@@ -5,17 +5,13 @@ var APP_DIR = path.resolve(__dirname, 'app');
 
 module.exports = {
   entry: {
-    app: ["./app/main.js"]
+    app: [path.resolve(APP_DIR, "app.jsx")]
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: APP_DIR,
     publicPath: "/assets/",
     filename: "bundle.js"
   },
-  devServer: {
-    inline: true
-  },
-  
   module : {
     loaders : [
       {

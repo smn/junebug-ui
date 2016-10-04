@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class ConnectBox extends React.Component {
+export class ConnectBox extends React.Component {
   render() {
     return (
       <form className="form-connect">
@@ -14,4 +14,4 @@ class ConnectBox extends React.Component {
   }
 }
 
-ReactDOM.render(<ConnectBox />, document.getElementById('connect'));
+// ReactDOM.render(<ConnectBox />, document.getElementById('app'));
