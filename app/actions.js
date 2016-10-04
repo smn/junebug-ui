@@ -1,12 +1,5 @@
-export const LOGIN = 'LOGIN'
-export const REFRESH_CHANNELS = 'REFRESH_CHANNELS'
+import CHANNEL_FIXTURE from './fixtures';
 
-export const doLogin = (username, password) => {
-    return {
-        type: LOGIN,
-        credentials: {
-            username: username,
-            password: password
-        }
-    }
-};
+let setChannelAction = {type: 'SET_CHANNELS', channels: []};
+let addChannelaction = {type: 'ADD_CHANNEL', channel: CHANNEL_FIXTURE};
+let removeChannelAction = {type: 'REMOVE_CHANNEL': channel: CHANNEL_FIXTURE};

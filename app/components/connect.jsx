@@ -13,5 +13,3 @@ export class ConnectBox extends React.Component {
     );
   }
 }
-
-// ReactDOM.render(<ConnectBox />, document.getElementById('app'));
